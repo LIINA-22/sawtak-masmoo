@@ -113,8 +113,7 @@ img { max-width: 100%; }
 .hero h1 span { color: var(--brand); }
 .hero-lead { font-size: 1.2rem; color: var(--hero-muted); max-width: 34em; margin-bottom: 28px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.hero-art { border-radius: 24px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 24px 60px var(--shadow); }
-.hero-art img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: 40% 50%; }
+.hero-logo { justify-self: center; width: min(320px, 100%); opacity: .95; filter: var(--logo-filter); }
 .hero-facts { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 28px; color: var(--muted); font-size: .95rem; }
 .hero-facts span::before { content: "✓ "; color: var(--ok); font-weight: 800; }
 
@@ -325,7 +324,7 @@ img { max-width: 100%; }
   .nav-links.open { display: flex; }
   .nav-links .btn { margin: 6px 0 0; }
   .hero-inner { grid-template-columns: minmax(0, 1fr); }
-  .hero-art { max-width: 560px; }
+  .hero-logo { display: none; }
   .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stats-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .charts { grid-template-columns: minmax(0, 1fr); }
