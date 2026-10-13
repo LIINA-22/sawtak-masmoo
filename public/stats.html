@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl" style="background:#0f1623">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الإحصائيات | صوتك مسموع!</title>
+  <meta name="description" content="مبادرة صوتك مسموع! من المجلس الطلابي لكلية علوم الحاسب وتقنية المعلومات: شاركنا اقتراحك أو ملاحظتك أو مشكلتك، والمجلس يتابعها معك.">
+  <meta name="theme-color" content="#141d2c">
+  <meta property="og:title" content="صوتك مسموع!">
+  <meta property="og:description" content="مبادرة صوتك مسموع! من المجلس الطلابي لكلية علوم الحاسب وتقنية المعلومات: شاركنا اقتراحك أو ملاحظتك أو مشكلتك، والمجلس يتابعها معك.">
+  <meta property="og:image" content="/assets/hero.jpg">
+  <link rel="icon" href="/assets/logo-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand">
+        <img src="/assets/logo-white.png" alt="شعار المجلس الطلابي">
+        <span><strong>صوتك <span>مسموع!</span></strong><small>مبادرة من المجلس الطلابي</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="القائمة" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="/">الرئيسية</a>
+        <a href="/#how">كيف تعمل</a>
+        <a href="/#faq">الأسئلة الشائعة</a>
+        <a href="/stats.html" aria-current="page">الإحصائيات</a>
+        <a href="/#share" class="btn btn-sun">شارك الآن</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>إحصائيات المبادرة</h1>
+        <p>أرقام عامة عن المشاركات وما تم فيها، بدون أي بيانات شخصية.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="stats-tiles">
+          <div class="tile"><span class="num" data-stat="total">—</span><span class="lbl">إجمالي المشاركات</span></div>
+          <div class="tile progress"><span class="num" data-stat="active">—</span><span class="lbl">قيد المراجعة والتنفيذ</span></div>
+          <div class="tile done"><span class="num" data-stat="done">—</span><span class="lbl">تم حلها</span></div>
+          <div class="tile"><span class="num" data-stat="rate">—</span><span class="lbl">نسبة الحل</span></div>
+        </div>
+        <div class="charts">
+          <div class="chart-card wide">
+            <h2>المشاركات خلال آخر 6 أشهر</h2>
+            <p class="hint">عدد المشاركات الجديدة في كل شهر.</p>
+            <div id="chart-months"></div>
+          </div>
+          <div class="chart-card">
+            <h2>حسب نوع المشاركة</h2>
+            <p class="hint">اقتراح، مشكلة، فكرة...</p>
+            <ul class="bars" id="chart-type"></ul>
+          </div>
+          <div class="chart-card">
+            <h2>حسب المجال</h2>
+            <p class="hint">الجهة أو الخدمة اللي تخصها المشاركة.</p>
+            <ul class="bars" id="chart-area"></ul>
+          </div>
+        </div>
+        <p class="stats-updated" id="stats-updated"></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://studentcouncilccsit.netlify.app/" target="_blank" rel="noopener">موقع المجلس الطلابي</a>
+        <a href="mailto:ccsit.sc@iau.edu.sa"><span dir="ltr">ccsit.sc@iau.edu.sa</span></a>
+        <a href="https://x.com/CcsitCouncil" target="_blank" rel="noopener"><span dir="ltr">@CcsitCouncil</span></a>
+      </div>
+      <p>© <span id="year">2026</span> المجلس الطلابي · كلية علوم الحاسب وتقنية المعلومات · جامعة الإمام عبدالرحمن بن فيصل</p>
+    </div>
+  </footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

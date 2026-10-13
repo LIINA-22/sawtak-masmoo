@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl" style="background:#0f1623">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة التحكم | صوتك مسموع!</title>
+  <meta name="description" content="مبادرة صوتك مسموع! من المجلس الطلابي لكلية علوم الحاسب وتقنية المعلومات: شاركنا اقتراحك أو ملاحظتك أو مشكلتك، والمجلس يتابعها معك.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#141d2c">
+  <meta property="og:title" content="صوتك مسموع!">
+  <meta property="og:description" content="مبادرة صوتك مسموع! من المجلس الطلابي لكلية علوم الحاسب وتقنية المعلومات: شاركنا اقتراحك أو ملاحظتك أو مشكلتك، والمجلس يتابعها معك.">
+  <meta property="og:image" content="/assets/hero.jpg">
+  <link rel="icon" href="/assets/logo-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand">
+        <img src="/assets/logo-white.png" alt="شعار المجلس الطلابي">
+        <span><strong>صوتك <span>مسموع!</span></strong><small>لوحة تحكم الفريق</small></span>
+      </a>
+      <button class="btn btn-ghost btn-small" id="logout" hidden>تسجيل الخروج</button>
+    </div>
+  </header>
+  <main>
+    <section class="section" style="padding-top:32px">
+      <div class="container">
+        <form class="login" id="login">
+          <h1>دخول فريق المجلس</h1>
+          <p class="muted">هذه الصفحة لفريق المبادرة فقط.</p>
+          <label for="password">كلمة السر</label>
+          <input type="password" id="password" required autocomplete="current-password" style="font:inherit;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text)">
+          <button class="btn btn-sun" type="submit">دخول</button>
+          <p class="form-status" id="login-status" role="status"></p>
+        </form>
+
+        <div id="panel" hidden>
+          <div class="chips" id="status-chips"></div>
+          <div class="toolbar">
+            <input type="search" id="search" placeholder="ابحث بالاسم أو الرقم المرجعي أو النص..." aria-label="بحث">
+            <select id="filter-type" aria-label="نوع المشاركة"><option value="">كل الأنواع</option></select>
+            <select id="filter-area" aria-label="المجال"><option value="">كل المجالات</option></select>
+            <button class="btn btn-small" id="refresh">تحديث</button>
+            <button class="btn btn-small btn-ghost" id="export" style="color:var(--accent);border-color:var(--accent)">تصدير Excel (CSV)</button>
+          </div>
+          <p class="muted" id="count" style="margin-bottom:10px"></p>
+          <div class="list" id="list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/assets/admin.js"></script>
+</body>
+</html>
