@@ -1,4 +1,4 @@
-/* صوتك مسموع! — الموقع داكن دائمًا، بألوان المجلس الطلابي */
+/* صوتك مسموع! — نفس ثيم موقع المجلس الطلابي: داكن مع أزرق فاتح */
 :root {
   /* الخلفيات والنصوص */
   --bg: #0f1623;
@@ -8,8 +8,8 @@
   --text: #e6edf6;
   --muted: #9aaabf;
   /* لون الهوية: الأزرار الرئيسية والعناوين المميزة */
-  --brand: #f5b942;
-  --brand-hover: #e6a92f;
+  --brand: #5fb3e4;
+  --brand-hover: #4a9fd4;
   --on-brand: #141d2c;
   /* لون ثانوي: الروابط والرسوم */
   --primary: #4a9fd4;
@@ -17,12 +17,11 @@
   --accent: #5fb3e4;
   --accent-soft: rgb(95 179 228 / .1);
   /* الهيدر والبطل والفوتر */
-  --header-bg: rgb(20 29 44 / .92);
+  --header-bg: #141d2c;
   --header-text: #fff;
   --hover-tint: rgb(255 255 255 / .08);
   --hero-bg:
-    radial-gradient(circle at 85% 30%, rgb(245 185 66 / .12), transparent 40%),
-    radial-gradient(circle at 10% 70%, rgb(95 179 228 / .16), transparent 45%),
+    radial-gradient(circle at 15% 50%, rgb(95 179 228 / .18), transparent 45%),
     linear-gradient(135deg, #141d2c 0%, #1d2a40 60%, #1f3b5c 100%);
   --hero-text: #fff;
   --hero-muted: #c9d6e6;
@@ -81,7 +80,7 @@ img { max-width: 100%; }
 .site-header {
   position: sticky; top: 0; z-index: 10;
   background: var(--header-bg); color: var(--header-text); backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgb(0 0 0 / .2);
 }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; position: relative; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; line-height: 1.25; }
@@ -92,10 +91,10 @@ img { max-width: 100%; }
 .nav-links { display: flex; align-items: center; gap: 4px; font-weight: 500; }
 .nav-links a { padding: 8px 16px; border-radius: 999px; transition: .2s; white-space: nowrap; }
 .nav-links a:hover { background: var(--hover-tint); }
-.nav-links a[aria-current="page"] { color: var(--brand); }
-.nav-links .btn { margin-inline-start: 8px; padding: 8px 20px; }
-.nav-links .btn[aria-current="page"] { color: var(--on-brand); }
-.nav-links .btn:hover { background: var(--brand-hover); }
+.nav-links a[aria-current="page"] { background: var(--brand); color: var(--on-brand); font-weight: 700; }
+.nav-links .btn { margin-inline-start: 8px; padding: 6px 20px; background: transparent; color: var(--brand); border-color: var(--brand); }
+.nav-links .btn[aria-current="page"] { background: var(--brand); color: var(--on-brand); }
+.nav-links .btn:hover { background: var(--brand); color: var(--on-brand); }
 .menu-toggle { display: none; background: none; border: 0; font-size: 1.6rem; color: var(--header-text); cursor: pointer; padding: 4px 8px; }
 
 /* البطل */
@@ -108,8 +107,7 @@ img { max-width: 100%; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px;
   color: var(--accent); font-weight: 700; font-size: .95rem;
-  background: var(--accent-soft); border: 1px solid var(--accent);
-  padding: 4px 14px; border-radius: 999px;
+
 }
 .hero h1 { font-size: clamp(2.6rem, 7vw, 4.4rem); line-height: 1.2; font-weight: 800; margin: 16px 0 8px; }
 .hero h1 span { color: var(--brand); }
