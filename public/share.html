@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ar" dir="rtl" style="background:#0f1623">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شارك الآن | صوتك مسموع!</title>
+  <meta name="description" content="مبادرة صوتك مسموع! من المجلس الطلابي لكلية علوم الحاسب وتقنية المعلومات: شاركنا اقتراحك أو ملاحظتك أو مشكلتك، والمجلس يتابعها معك.">
+  <meta name="theme-color" content="#141d2c">
+  <meta property="og:title" content="صوتك مسموع!">
+  <meta property="og:description" content="مبادرة صوتك مسموع! من المجلس الطلابي لكلية علوم الحاسب وتقنية المعلومات: شاركنا اقتراحك أو ملاحظتك أو مشكلتك، والمجلس يتابعها معك.">
+  <meta property="og:image" content="/assets/hero.jpg">
+  <link rel="icon" href="/assets/logo-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand">
+        <img src="/assets/logo-white.png" alt="شعار المجلس الطلابي">
+        <span><strong>صوتك <span>مسموع!</span></strong><small>مبادرة من المجلس الطلابي</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="القائمة" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="/">الرئيسية</a>
+        <a href="/about.html">عن المبادرة</a>
+        <a href="/faq.html">الأسئلة الشائعة</a>
+        <a href="/stats.html">الإحصائيات</a>
+        <a href="/share.html" class="btn btn-sun" aria-current="page">شارك الآن</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <h1>شاركنا صوتك</h1>
+        <p>اقتراحك أو ملاحظتك أو مشكلتك تهمنا، وفريق المجلس يقرأ كل مشاركة.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="narrow">
+        <p class="form-note">نطلب الاسم ووسيلة التواصل ليتمكن المجلس من متابعة مشاركتك معك. <span class="req">*</span> مطلوب</p>
+        <form id="share-form" class="form" novalidate>
+          <input type="hidden" name="t" id="f-t">
+          <div class="trap" aria-hidden="true"><label>لا تعبّئ هذا الحقل <input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+          <div class="q">
+            <label class="q-label" for="f-name">الاسم <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="f-name" name="name" required maxlength="100" autocomplete="name" placeholder="أدخل إجابتك">
+          </div>
+
+          <div class="q">
+            <label class="q-label" for="f-contact">رقم الجوال أو البريد الجامعي <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="f-contact" name="contact" required maxlength="100" dir="auto" placeholder="05xxxxxxxx أو الإيميل الجامعي">
+          </div>
+
+          <fieldset class="q">
+            <legend>التخصص <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="major" value="علوم الحاسب" required><span>علوم الحاسب</span></label>
+              <label class="choice"><input type="radio" name="major" value="نظم المعلومات"><span>نظم المعلومات</span></label>
+              <label class="choice"><input type="radio" name="major" value="الأمن السيبراني"><span>الأمن السيبراني</span></label>
+              <label class="choice"><input type="radio" name="major" value="الذكاء الاصطناعي"><span>الذكاء الاصطناعي</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q">
+            <legend>ما نوع مشاركتك؟ <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="type" value="اقتراح" required><span>اقتراح</span></label>
+              <label class="choice"><input type="radio" name="type" value="مشكلة / شكوى"><span>مشكلة / شكوى</span></label>
+              <label class="choice"><input type="radio" name="type" value="ملاحظة"><span>ملاحظة</span></label>
+              <label class="choice"><input type="radio" name="type" value="فكرة لمبادرة أو فعالية"><span>فكرة لمبادرة أو فعالية</span></label>
+              <label class="choice"><input type="radio" name="type" value="استفسار"><span>استفسار</span></label>
+              <label class="choice"><input type="radio" name="type" value="أخرى"><span>أخرى</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" id="q-problem" hidden>
+            <legend>ما نوع المشكلة بشكل أدق؟ <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="problem-type" value="تأخير في خدمة أو إجراء" required><span>تأخير في خدمة أو إجراء</span></label>
+              <label class="choice"><input type="radio" name="problem-type" value="عدم وضوح إجراء أو معلومة"><span>عدم وضوح إجراء أو معلومة</span></label>
+              <label class="choice"><input type="radio" name="problem-type" value="مشكلة في نظام إلكتروني"><span>مشكلة في نظام إلكتروني</span></label>
+              <label class="choice"><input type="radio" name="problem-type" value="مشكلة في قاعة أو مرفق"><span>مشكلة في قاعة أو مرفق</span></label>
+              <label class="choice"><input type="radio" name="problem-type" value="مشكلة أكاديمية"><span>مشكلة أكاديمية</span></label>
+              <label class="choice"><input type="radio" name="problem-type" value="مشكلة تنظيمية"><span>مشكلة تنظيمية</span></label>
+              <label class="choice"><input type="radio" name="problem-type" value="مشكلة متكررة تؤثر على أكثر من طالب"><span>مشكلة متكررة تؤثر على أكثر من طالب</span></label>
+              <label class="choice"><input type="radio" name="problem-type" value="أخرى"><span>أخرى</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q">
+            <legend>ما المجال الذي تتعلق به المشاركة؟ <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="area" value="الشؤون الأكاديمية" required><span>الشؤون الأكاديمية</span></label>
+              <label class="choice"><input type="radio" name="area" value="الجداول والمحاضرات"><span>الجداول والمحاضرات</span></label>
+              <label class="choice"><input type="radio" name="area" value="القاعات والمعامل"><span>القاعات والمعامل</span></label>
+              <label class="choice"><input type="radio" name="area" value="المرافق والخدمات"><span>المرافق والخدمات</span></label>
+              <label class="choice"><input type="radio" name="area" value="الخدمات التقنية والأنظمة"><span>الخدمات التقنية والأنظمة</span></label>
+              <label class="choice"><input type="radio" name="area" value="الإجراءات الإدارية"><span>الإجراءات الإدارية</span></label>
+              <label class="choice"><input type="radio" name="area" value="الأنشطة والفعاليات"><span>الأنشطة والفعاليات</span></label>
+              <label class="choice"><input type="radio" name="area" value="التدريب والفرص المهنية"><span>التدريب والفرص المهنية</span></label>
+              <label class="choice"><input type="radio" name="area" value="الأندية الطلابية"><span>الأندية الطلابية</span></label>
+              <label class="choice"><input type="radio" name="area" value="مواقف السيارات والتنقل"><span>مواقف السيارات والتنقل</span></label>
+              <label class="choice"><input type="radio" name="area" value="أخرى"><span>أخرى</span></label>
+            </div>
+          </fieldset>
+
+          <div class="q">
+            <label class="q-label" for="f-message">اشرح ملاحظتك أو اقتراحك باختصار <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-message" name="message" rows="4" required maxlength="3000" placeholder="أدخل إجابتك"></textarea>
+          </div>
+
+          <div class="q">
+            <label class="q-label" for="f-solution">هل لديك حل أو اقتراح للتحسين؟ <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-solution" name="solution" rows="3" required maxlength="3000" placeholder="أدخل إجابتك"></textarea>
+          </div>
+
+          <div class="q">
+            <label class="q-label" for="f-images">أرفق صورًا توضّح المشكلة إن وُجدت (اختياري)</label>
+            <input type="file" id="f-images" accept="image/*" multiple>
+            <small class="muted">حتى 3 صور، تقدر تختارها مرة وحدة أو وحدة وحدة.</small>
+            <ul class="file-list" id="file-list"></ul>
+          </div>
+
+          <fieldset class="q">
+            <legend>كم تعتقد أن هذه المشكلة أو الفكرة تؤثر على الطلاب؟ <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="impact" value="تؤثر على عدد كبير من الطلاب" required><span>تؤثر على عدد كبير من الطلاب</span></label>
+              <label class="choice"><input type="radio" name="impact" value="تؤثر على مجموعة محددة"><span>تؤثر على مجموعة محددة</span></label>
+              <label class="choice"><input type="radio" name="impact" value="حالة فردية"><span>حالة فردية</span></label>
+              <label class="choice"><input type="radio" name="impact" value="لا أعلم"><span>لا أعلم</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q">
+            <legend>هل سبق أن واجهت هذه المشكلة أكثر من مرة؟ <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="frequency" value="نعم، بشكل متكرر" required><span>نعم، بشكل متكرر</span></label>
+              <label class="choice"><input type="radio" name="frequency" value="حدثت أكثر من مرة"><span>حدثت أكثر من مرة</span></label>
+              <label class="choice"><input type="radio" name="frequency" value="حدثت مرة واحدة"><span>حدثت مرة واحدة</span></label>
+              <label class="choice"><input type="radio" name="frequency" value="لا ينطبق"><span>لا ينطبق</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q">
+            <legend>ما درجة أولوية الموضوع من وجهة نظرك؟ <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="priority" value="عاجل" required><span>عاجل</span></label>
+              <label class="choice"><input type="radio" name="priority" value="مرتفع"><span>مرتفع</span></label>
+              <label class="choice"><input type="radio" name="priority" value="متوسط"><span>متوسط</span></label>
+              <label class="choice"><input type="radio" name="priority" value="منخفض"><span>منخفض</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q">
+            <legend>هل ترغب أن يتواصل معك المجلس الطلابي بخصوص الموضوع؟ <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="contact-wanted" value="نعم" required><span>نعم</span></label>
+              <label class="choice"><input type="radio" name="contact-wanted" value="لا، لا أحتاج إلى تواصل"><span>لا، لا أحتاج إلى تواصل</span></label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-sun">إرسال المشاركة</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://studentcouncilccsit.netlify.app/" target="_blank" rel="noopener">موقع المجلس الطلابي</a>
+        <a href="mailto:ccsit.sc@iau.edu.sa"><span dir="ltr">ccsit.sc@iau.edu.sa</span></a>
+        <a href="https://x.com/CcsitCouncil" target="_blank" rel="noopener"><span dir="ltr">@CcsitCouncil</span></a>
+      </div>
+      <p>© <span id="year">2026</span> المجلس الطلابي · كلية علوم الحاسب وتقنية المعلومات · جامعة الإمام عبدالرحمن بن فيصل</p>
+    </div>
+  </footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

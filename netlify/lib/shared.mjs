@@ -1,5 +1,5 @@
 // المنطق المشترك بين الدوال: الخيارات المسموحة، والتحقق، والتخزين، وصلاحية لوحة التحكم.
-// إذا عدّلت خيارًا في النموذج (index.html)، عدّله هنا أيضًا.
+// إذا عدّلت خيارًا في النموذج (share.html)، عدّله هنا أيضًا.
 import { getStore } from "@netlify/blobs";
 import { createHash, timingSafeEqual } from "node:crypto";
 

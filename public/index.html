@@ -25,10 +25,10 @@
       <button class="menu-toggle" aria-label="القائمة" aria-expanded="false" aria-controls="nav-links">☰</button>
       <nav class="nav-links" id="nav-links">
         <a href="/" aria-current="page">الرئيسية</a>
-        <a href="/#how">كيف تعمل</a>
-        <a href="/#faq">الأسئلة الشائعة</a>
+        <a href="/about.html">عن المبادرة</a>
+        <a href="/faq.html">الأسئلة الشائعة</a>
         <a href="/stats.html">الإحصائيات</a>
-        <a href="/#share" class="btn btn-sun">شارك الآن</a>
+        <a href="/share.html" class="btn btn-sun">شارك الآن</a>
       </nav>
     </div>
   </header>
@@ -40,8 +40,8 @@
           <h1>صوتك <span>مسموع!</span></h1>
           <p class="hero-lead">عندك اقتراح، أو مشكلة تواجهك، أو فكرة تبي تشوفها في الكلية؟ شاركنا إياها، وفريق المجلس الطلابي يقرأ كل مشاركة ويتابعها مع الجهة المختصة.</p>
           <div class="hero-actions">
-            <a href="#share" class="btn btn-sun">شارك الآن</a>
-            <a href="#how" class="btn btn-ghost">كيف تعمل؟</a>
+            <a href="/share.html" class="btn btn-sun">شارك الآن</a>
+            <a href="/about.html" class="btn btn-ghost">كيف تعمل؟</a>
           </div>
           <div class="hero-facts">
             <span>أقل من دقيقتين</span>
@@ -55,189 +55,27 @@
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section">
       <div class="container">
-        <h2 class="section-title">وش تقدر تشاركنا؟</h2>
-        <p class="section-sub">أي شيء يخص حياتك الجامعية في الكلية، صغير كان أو كبير.</p>
-        <div class="grid topics">
-          <div class="card"><div class="icon" aria-hidden="true">💡</div><h3>اقتراح</h3><p>فكرة تحسّن خدمة أو إجراء أو مكان في الكلية.</p></div>
-          <div class="card"><div class="icon" aria-hidden="true">⚠️</div><h3>مشكلة أو شكوى</h3><p>شيء يعيقك أو يعيق زملاءك، ونبي نوصله لمن يحله.</p></div>
-          <div class="card"><div class="icon" aria-hidden="true">📝</div><h3>ملاحظة</h3><p>شيء لاحظته ويستاهل ينتبه له المجلس.</p></div>
-          <div class="card"><div class="icon" aria-hidden="true">🎉</div><h3>فكرة لفعالية</h3><p>ورشة أو لقاء أو مبادرة تتمنى المجلس يسويها.</p></div>
-          <div class="card"><div class="icon" aria-hidden="true">❓</div><h3>استفسار</h3><p>سؤال ما لقيت له جواب، ونساعدك توصل له.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="how">
-      <div class="container">
-        <h2 class="section-title">كيف تعمل المبادرة؟</h2>
-        <p class="section-sub">من لحظة الإرسال إلى الحل، هذي رحلة مشاركتك.</p>
-        <ol class="steps">
-          <li><h3>ترسل مشاركتك</h3><p>تعبّي النموذج في أقل من دقيقتين، وتقدر ترفق حتى 3 صور.</p></li>
-          <li><h3>نراجعها</h3><p>يقرأ فريق المجلس كل مشاركة ويصنّفها حسب المجال والأولوية.</p></li>
-          <li><h3>نرفعها للجهة المختصة</h3><p>نوصل الموضوع للجهة المسؤولة في الكلية ونتابعه معها.</p></li>
-          <li><h3>نرجع لك</h3><p>إذا طلبت التواصل، نبلغك بما تم عن طريق الوسيلة اللي كتبتها.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section" id="numbers">
-      <div class="container">
-        <h2 class="section-title">بالأرقام</h2>
-        <p class="section-sub">نتائج المبادرة أمامك، وتتحدث تلقائيًا مع كل مشاركة.</p>
-        <div class="stats-strip">
-          <div class="tile"><span class="num" data-stat="total">—</span><span class="lbl">مشاركة وصلتنا</span></div>
-          <div class="tile progress"><span class="num" data-stat="active">—</span><span class="lbl">قيد المراجعة والتنفيذ</span></div>
-          <div class="tile done"><span class="num" data-stat="done">—</span><span class="lbl">تم حلها</span></div>
-        </div>
-        <p class="strip-more"><a href="/stats.html">عرض الإحصائيات كاملة ←</a></p>
-      </div>
-    </section>
-
-    <section class="section alt" id="share">
-      <div class="narrow">
-        <h2 class="section-title">شاركنا الآن</h2>
-        <p class="form-intro">يسعد المجلس الطلابي باستقبال اقتراحاتك وملاحظاتك وأفكارك واستفساراتك، فصوتك يصنع الفرق.</p>
-        <p class="form-note">نطلب الاسم ووسيلة التواصل ليتمكن المجلس من متابعة مشاركتك معك. <span class="req">*</span> مطلوب</p>
-        <form id="share-form" class="form" novalidate>
-          <input type="hidden" name="t" id="f-t">
-          <div class="trap" aria-hidden="true"><label>لا تعبّئ هذا الحقل <input name="website" tabindex="-1" autocomplete="off"></label></div>
-
-          <div class="q">
-            <label class="q-label" for="f-name">الاسم <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="f-name" name="name" required maxlength="100" autocomplete="name" placeholder="أدخل إجابتك">
-          </div>
-
-          <div class="q">
-            <label class="q-label" for="f-contact">رقم الجوال أو البريد الجامعي <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="f-contact" name="contact" required maxlength="100" dir="auto" placeholder="05xxxxxxxx أو الإيميل الجامعي">
-          </div>
-
-          <fieldset class="q">
-            <legend>التخصص <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="major" value="علوم الحاسب" required><span>علوم الحاسب</span></label>
-              <label class="choice"><input type="radio" name="major" value="نظم المعلومات"><span>نظم المعلومات</span></label>
-              <label class="choice"><input type="radio" name="major" value="الأمن السيبراني"><span>الأمن السيبراني</span></label>
-              <label class="choice"><input type="radio" name="major" value="الذكاء الاصطناعي"><span>الذكاء الاصطناعي</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="q">
-            <legend>ما نوع مشاركتك؟ <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="type" value="اقتراح" required><span>اقتراح</span></label>
-              <label class="choice"><input type="radio" name="type" value="مشكلة / شكوى"><span>مشكلة / شكوى</span></label>
-              <label class="choice"><input type="radio" name="type" value="ملاحظة"><span>ملاحظة</span></label>
-              <label class="choice"><input type="radio" name="type" value="فكرة لمبادرة أو فعالية"><span>فكرة لمبادرة أو فعالية</span></label>
-              <label class="choice"><input type="radio" name="type" value="استفسار"><span>استفسار</span></label>
-              <label class="choice"><input type="radio" name="type" value="أخرى"><span>أخرى</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="q" id="q-problem" hidden>
-            <legend>ما نوع المشكلة بشكل أدق؟ <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="problem-type" value="تأخير في خدمة أو إجراء" required><span>تأخير في خدمة أو إجراء</span></label>
-              <label class="choice"><input type="radio" name="problem-type" value="عدم وضوح إجراء أو معلومة"><span>عدم وضوح إجراء أو معلومة</span></label>
-              <label class="choice"><input type="radio" name="problem-type" value="مشكلة في نظام إلكتروني"><span>مشكلة في نظام إلكتروني</span></label>
-              <label class="choice"><input type="radio" name="problem-type" value="مشكلة في قاعة أو مرفق"><span>مشكلة في قاعة أو مرفق</span></label>
-              <label class="choice"><input type="radio" name="problem-type" value="مشكلة أكاديمية"><span>مشكلة أكاديمية</span></label>
-              <label class="choice"><input type="radio" name="problem-type" value="مشكلة تنظيمية"><span>مشكلة تنظيمية</span></label>
-              <label class="choice"><input type="radio" name="problem-type" value="مشكلة متكررة تؤثر على أكثر من طالب"><span>مشكلة متكررة تؤثر على أكثر من طالب</span></label>
-              <label class="choice"><input type="radio" name="problem-type" value="أخرى"><span>أخرى</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="q">
-            <legend>ما المجال الذي تتعلق به المشاركة؟ <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="area" value="الشؤون الأكاديمية" required><span>الشؤون الأكاديمية</span></label>
-              <label class="choice"><input type="radio" name="area" value="الجداول والمحاضرات"><span>الجداول والمحاضرات</span></label>
-              <label class="choice"><input type="radio" name="area" value="القاعات والمعامل"><span>القاعات والمعامل</span></label>
-              <label class="choice"><input type="radio" name="area" value="المرافق والخدمات"><span>المرافق والخدمات</span></label>
-              <label class="choice"><input type="radio" name="area" value="الخدمات التقنية والأنظمة"><span>الخدمات التقنية والأنظمة</span></label>
-              <label class="choice"><input type="radio" name="area" value="الإجراءات الإدارية"><span>الإجراءات الإدارية</span></label>
-              <label class="choice"><input type="radio" name="area" value="الأنشطة والفعاليات"><span>الأنشطة والفعاليات</span></label>
-              <label class="choice"><input type="radio" name="area" value="التدريب والفرص المهنية"><span>التدريب والفرص المهنية</span></label>
-              <label class="choice"><input type="radio" name="area" value="الأندية الطلابية"><span>الأندية الطلابية</span></label>
-              <label class="choice"><input type="radio" name="area" value="مواقف السيارات والتنقل"><span>مواقف السيارات والتنقل</span></label>
-              <label class="choice"><input type="radio" name="area" value="أخرى"><span>أخرى</span></label>
-            </div>
-          </fieldset>
-
-          <div class="q">
-            <label class="q-label" for="f-message">اشرح ملاحظتك أو اقتراحك باختصار <span class="req" aria-hidden="true">*</span></label>
-            <textarea id="f-message" name="message" rows="4" required maxlength="3000" placeholder="أدخل إجابتك"></textarea>
-          </div>
-
-          <div class="q">
-            <label class="q-label" for="f-solution">هل لديك حل أو اقتراح للتحسين؟ <span class="req" aria-hidden="true">*</span></label>
-            <textarea id="f-solution" name="solution" rows="3" required maxlength="3000" placeholder="أدخل إجابتك"></textarea>
-          </div>
-
-          <div class="q">
-            <label class="q-label" for="f-images">أرفق صورًا توضّح المشكلة إن وُجدت (اختياري)</label>
-            <input type="file" id="f-images" accept="image/*" multiple>
-            <small class="muted">حتى 3 صور، تقدر تختارها مرة وحدة أو وحدة وحدة.</small>
-            <ul class="file-list" id="file-list"></ul>
-          </div>
-
-          <fieldset class="q">
-            <legend>كم تعتقد أن هذه المشكلة أو الفكرة تؤثر على الطلاب؟ <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="impact" value="تؤثر على عدد كبير من الطلاب" required><span>تؤثر على عدد كبير من الطلاب</span></label>
-              <label class="choice"><input type="radio" name="impact" value="تؤثر على مجموعة محددة"><span>تؤثر على مجموعة محددة</span></label>
-              <label class="choice"><input type="radio" name="impact" value="حالة فردية"><span>حالة فردية</span></label>
-              <label class="choice"><input type="radio" name="impact" value="لا أعلم"><span>لا أعلم</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="q">
-            <legend>هل سبق أن واجهت هذه المشكلة أكثر من مرة؟ <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="frequency" value="نعم، بشكل متكرر" required><span>نعم، بشكل متكرر</span></label>
-              <label class="choice"><input type="radio" name="frequency" value="حدثت أكثر من مرة"><span>حدثت أكثر من مرة</span></label>
-              <label class="choice"><input type="radio" name="frequency" value="حدثت مرة واحدة"><span>حدثت مرة واحدة</span></label>
-              <label class="choice"><input type="radio" name="frequency" value="لا ينطبق"><span>لا ينطبق</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="q">
-            <legend>ما درجة أولوية الموضوع من وجهة نظرك؟ <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="priority" value="عاجل" required><span>عاجل</span></label>
-              <label class="choice"><input type="radio" name="priority" value="مرتفع"><span>مرتفع</span></label>
-              <label class="choice"><input type="radio" name="priority" value="متوسط"><span>متوسط</span></label>
-              <label class="choice"><input type="radio" name="priority" value="منخفض"><span>منخفض</span></label>
-            </div>
-          </fieldset>
-
-          <fieldset class="q">
-            <legend>هل ترغب أن يتواصل معك المجلس الطلابي بخصوص الموضوع؟ <span class="req" aria-hidden="true">*</span></legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="contact-wanted" value="نعم" required><span>نعم</span></label>
-              <label class="choice"><input type="radio" name="contact-wanted" value="لا، لا أحتاج إلى تواصل"><span>لا، لا أحتاج إلى تواصل</span></label>
-            </div>
-          </fieldset>
-
-          <button type="submit" class="btn btn-sun">إرسال المشاركة</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="narrow">
-        <h2 class="section-title">الأسئلة الشائعة</h2>
-        <p class="section-sub">إذا عندك سؤال ثاني، راسلنا على بريد المجلس.</p>
-        <div class="faq">
-          <details><summary>مين يشوف مشاركتي؟</summary><p>فريق المجلس الطلابي المسؤول عن المبادرة فقط. اسمك ووسيلة تواصلك ما تنعرض لأحد خارج الفريق، والإحصائيات العامة أرقام فقط بدون أي بيانات شخصية.</p></details>
-          <details><summary>ليش تطلبون الاسم ووسيلة التواصل؟</summary><p>عشان نقدر نرجع لك إذا احتجنا تفاصيل أكثر، أو نبلغك بما تم في موضوعك.</p></details>
-          <details><summary>متى يردون علي؟</summary><p>نراجع المشاركات أولًا بأول. إذا اخترت أنك تبي نتواصل معك، نرجع لك بعد ما يتضح وش صار في موضوعك.</p></details>
-          <details><summary>هل كل مشاركة تتنفذ؟</summary><p>كل مشاركة تُقرأ وتُصنّف، وبعضها يحتاج وقت أو موافقة جهات ثانية. نتابع اللي بيدنا ونوصل الباقي لأصحاب القرار.</p></details>
-          <details><summary>أقدر أرسل أكثر من مشاركة؟</summary><p>أكيد. كل موضوع في مشاركة مستقلة أفضل، عشان نقدر نتابع كل واحد لحاله.</p></details>
+        <div class="grid shortcuts">
+          <a class="card link-card" href="/share.html">
+            <div class="icon" aria-hidden="true">✍️</div>
+            <h3>شارك الآن</h3>
+            <p>اقتراح أو مشكلة أو فكرة؟ النموذج ياخذ أقل من دقيقتين.</p>
+            <span class="more">ابدأ ←</span>
+          </a>
+          <a class="card link-card" href="/about.html">
+            <div class="icon" aria-hidden="true">🧭</div>
+            <h3>كيف تعمل المبادرة؟</h3>
+            <p>وش تقدر تشاركنا، ووش يصير لمشاركتك بعد ما ترسلها.</p>
+            <span class="more">اعرف أكثر ←</span>
+          </a>
+          <a class="card link-card" href="/stats.html">
+            <div class="icon" aria-hidden="true">📊</div>
+            <h3>بالأرقام</h3>
+            <p><strong class="inline-num" data-stat="total">—</strong> مشاركة وصلتنا، وتم حل <strong class="inline-num done" data-stat="done">—</strong> منها.</p>
+            <span class="more">الإحصائيات ←</span>
+          </a>
         </div>
       </div>
     </section>

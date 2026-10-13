@@ -335,3 +335,13 @@ img { max-width: 100%; }
   html { scroll-behavior: auto; }
   .card, .bar-fill { transition: none; }
 }
+
+/* بطاقات الرئيسية */
+.grid.shortcuts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.link-card { display: flex; flex-direction: column; }
+.link-card p { flex: 1; }
+.link-card .more { margin-top: 12px; color: var(--sun); font-weight: 700; }
+.inline-num { font-variant-numeric: tabular-nums; color: var(--text); }
+.inline-num.done { color: var(--ok); }
+.page-head + .section { padding-top: 48px; }
+@media (max-width: 900px) { .grid.shortcuts { grid-template-columns: minmax(0, 1fr); } }
